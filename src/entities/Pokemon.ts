@@ -6,13 +6,13 @@ export class Pokemon {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({ nullable: false })
     name: string;
 
-    @Column()
+    @Column({ nullable: false })
     ability: string;
 
-    @Column()
+    @Column({ nullable: false })
     type: string;
 
 }

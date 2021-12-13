@@ -29,5 +29,5 @@ createConnection().then(async () => {
         });
     });
 
-    app.listen(3000);
+    app.listen(process.env.APP_PORT);
 }).catch(error => console.log(error));

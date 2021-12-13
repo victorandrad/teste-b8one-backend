@@ -1,0 +1,26 @@
+### Requisição para trazer todos os pokemons
+GET http://localhost:3000/pokemon
+
+### Requisição para trazer um pokemon pelo id
+GET http://localhost:3000/pokemon/1
+
+### Requisição para cadastrar um pokemon
+POST http://localhost:3000/pokemon
+content-type: application/json
+
+{
+    "name": "Charmander",
+    "ability": "fly",
+    "type":  "fire"
+}
+
+### Requisição para alterar dados de um pokemon, você pode passar todos os parametros ou somente os que precisar
+POST http://localhost:3000/pokemon/1
+content-type: application/json
+
+{
+    "name": "Pichu"
+}
+
+### Requisição para alterar um pokemon
+DELETE http://localhost:3000/pokemon/1

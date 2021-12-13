@@ -30,7 +30,7 @@ export class Pokemon1639281428178 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        queryRunner.dropTable('pokemon');
+        await queryRunner.dropTable('pokemon', true, false, true);
     }
 
 }
